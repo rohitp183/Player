@@ -1,38 +1,98 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+.player-main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.player-card {
+  width: 300px;
+  height: 75vh;
+  background-color: #212121;
+  border-radius: 20px;
+  -webkit-box-shadow: 13px 12px 40px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 12px 40px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 13px 12px 40px -7px rgba(0, 0, 0, 0.75);
+}
+
+.control-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.icons {
+  box-shadow: 0px 0px 56px -5px rgba(252, 109, 25, 0.75);
+  -webkit-box-shadow: 0px 0px 56px -5px rgba(252, 109, 25, 0.75);
+  -moz-box-shadow: 0px 0px 56px -5px rgba(252, 109, 25, 0.75);
+  border-radius: 50%;
+}
+
+.icons:hover {
+  color: #ff9800 !important;
+  cursor: pointer;
+}
+
+.activeSong-name {
+  color: white;
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.activeArtist-name {
   color: white;
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-.App-link {
-  color: #61dafb;
+.activeArtist-duration{
+  color: white;
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 230px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.music-image {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 56px -5px rgba(15, 15, 15, 0.75) inset;
+  -webkit-box-shadow: 0px 0px 56px -5px rgba(15, 15, 15, 0.75) inset;
+  -moz-box-shadow: 0px 0px 56px -5px rgba(15, 15, 15, 0.75) inset;
+}
+
+.audio-waveform{
+  text-align: center;
+  position: relative;
+  top: 260px;
 }
