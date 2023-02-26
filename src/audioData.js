@@ -44,4 +44,4 @@ export const audios = [
         music: require('./audios/MONTA-RE.mp3'),
         creator: 'SWANAND KIRKIRE, AMITABH BHATTACHARYA, AMIT TRIVEDI'
     },
-].sort(() => .5 - Math.random())
+]

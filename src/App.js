@@ -5,7 +5,7 @@ import Player from './components/Player';
 function App() {
   const songs = audios;
   const [currentIndex, setCurrentIndex] = useState(null);
-  const [currentSong, setCurrentSong] = useState(songs[0]);
+  const [currentSong, setCurrentSong] = useState(songs[1]);
 
   const nextSong = () => {
     if(currentIndex + 1 < audios.length){
